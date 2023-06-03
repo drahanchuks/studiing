@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif    
+}
+
+main {
+    margin: 10px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+}
+.logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-img {
+    height: 40px;
+}
+
+.nav-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.nav-list li:last-of-type a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    background-color: #dd3d53;
+    transition: all .25s ease;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: #c9233a;
+}
+
+.nav-list li:last-of-type a svg {
+    width: 1em;
+}
+.donate {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* label, input, select {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+} */
