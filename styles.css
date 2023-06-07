@@ -1,0 +1,36 @@
+body {
+  background-image: url(pictures/pexels-pixabay-235985.jpg);
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size:100%;
+  color: white;
+  text-align: center;
+  }
+  .links {
+    display: inline-block;
+    margin: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+.table {
+  margin: 20px;
+}
+td, th {
+  border: solid;
+  padding: 5px;
+}
+table {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+.left {
+  text-align: left;
+}
