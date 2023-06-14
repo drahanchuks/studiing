@@ -5,59 +5,64 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <header>
-            <h1>Проба пера</h1>
-        </header>
-        <main>
-            <article>
-                <h2>HTML</h2>
-                <section>
-                    <ul>
-                        <li>
-                            <a class="links" href="https://iphoneislam.com/uk/2020/08/best-iphone-ipad-programming-apps/86546" target="_blank">Програми для навчання програмування на смартфоні</a>
-                        </li>
-                        <li>
-                            <a class="links" href="https://www.youtube.com/watch?v=Rr9QmVLqoP4&list=PLenwk9TUJzJ6ep0oogRRQZHzPMtTGKqF1&pp=iAQB" target="_blank">Основи HTML & CSS українською для початківців</a>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-            <div class="table">
-                <label for="table">Графік занять на тиждень</label>
-                <table id="table">
-                    <tr>
-                        <th>День</th>
-                        <th>Час, хв</th>
-                        <th>Разом, хв</th>
-                    </tr>
-                    <tr>
-                        <td class="left">Понеділок</td>
-                        <td>60</td>
-                        <td rowspan="5">300</td>
-                    </tr>
-                    <tr>
-                        <td class="left">Вівторок</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td class="left">Середа</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td class="left">Четвер</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td class="left">П'ятниця</td>
-                        <td>60</td>
-                    </tr>
-                </table>
+        <nav class="navbar">
+            <a href="./grey.html">Home</a>
+            <a href="#doughter">ME</a>
+            <a href="./html-css-lessons.html" target="_self">HTML & CSS</a>
+            <a href="#programing">Навчання програмування</a>
+            <a href="#doughter">Рената - абітурієнт</a>            
+        </nav>
+        <div class="container">
+            <div id="programing">
+                <article>
+                    <h2>Навчання програмування</h2>
+                    <section>
+                        <ul>
+                            <li>
+                                <a class="links" href="https://iphoneislam.com/uk/2020/08/best-iphone-ipad-programming-apps/86546" target="_self">Програми для навчання програмування на смартфоні</a>
+                            </li>
+                            <li>
+                                <a class="links" href="https://www.youtube.com/@savchukit1454/playlists" target="_self">Основи HTML & CSS та JS українською для початківців. Спмсок</a>
+                            </li>
+                            <li>
+                                <a class="links" href="./html-css-lessons.html" target="_self">Основи HTML & CSS українською для початківців. 1 урок</a>
+                            </li>
+                        </ul>                                        
+                    </section>
+                </article>
             </div>
-            
-        <p>Everyone</p>
-        </main>
-        <footer>
-            <p>End</p>
-        </footer>
+            <div id="doughter">
+                <article>
+                    <header>
+                        <h2>Рената - абітурієнт.</h2>
+                        <h3>ВСТУПНА КАМПАНІЯ 2023</h3>                        
+                        <button onclick="window.location.href='https://mon.gov.ua/ua';">
+                            Сайт Міністерства освіти і науки України
+                        </button>
+                        <p>ПОШИРЕНІ ЗАПИТАННЯ-ВІДПОВІДІ ЩОДО ВСТУПНОЇ КАМПАНІЇ ДО ЗАКЛАДІВ ФПО У 2023 РОЦІ</p>
+                        <button  onclick="window.location.href='https://mon.gov.ua/ua/osvita/fahova-peredvisha-osvita/vstupna-kampaniya-do-zakladiv-fahovoyi-peredvishoyi-osviti-2023-roku/poshireni-zapitannya-vidpovidi-shodo-vstupnoyi-kampaniyi-do-zakladiv-fpo-u-2023-roci';">
+                            ЗАПИТАННЯ-ВІДПОВІДІ
+                        </button>
+                    </header>
+                    <main>                        
+                        <h3>ЛІКУВАЛЬНА СПРАВА</h3>
+                        <button onclick="window.location.href='https://vstup.edbo.gov.ua/offers/?q=%D0%9B%D0%86%D0%9A%D0%A3%D0%92%D0%90%D0%9B%D0%AC%D0%9D%D0%90%20%D0%A1%D0%9F%D0%A0%D0%90%D0%92%D0%90';">
+                            Список навчальних закладів України
+                        </button>
+                        <p>КОМУНАЛЬНИЙ ЗАКЛАД ВИЩОЇ ОСВІТИ "ВОЛИНСЬКИЙ МЕДИЧНИЙ ІНСТИТУТ" ВОЛИНСЬКОЇ ОБЛАСНОЇ РАДИ</p>
+                        <button  onclick="window.location.href='https://vstup.edbo.gov.ua/offer/1207263/';">
+                            Список вступників
+                        </button>
+                        <p>КІВЕРЦІВСЬКИЙ ФАХОВИЙ МЕДИЧНИЙ КОЛЕДЖ ВОЛИНСЬКОЇ ОБЛАСНОЇ РАДИ</p>
+                        <button  onclick="window.location.href='https://vstup.edbo.gov.ua/offer/1139226/';">
+                            Список вступників
+                        </button>
+                    </main>
+                </article>                
+            </div>                              
+                <footer>
+                    
+                </footer>            
+        </div>        
     </body>
 </html>

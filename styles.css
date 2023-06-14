@@ -1,11 +1,42 @@
 body {
   background-image: url(pictures/pexels-pixabay-235985.jpg);
-  background-color: lightblue;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size:cover;
   color: white;
   text-align: center;
+  margin: 0;
   }
+.navbar {
+    overflow: hidden;
+    background-color: #6753534e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: #eeeeee;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+.navbar a:hover {
+    color: #1c87c9;
+  }
+
+.container {
+    padding: 18px;
+    margin-top: 35px;
+    height: 2000px;
+  }
+header {
+  margin: 50px;
+}
+
   .links {
     display: inline-block;
     margin: 5px;
@@ -15,8 +46,9 @@ body {
     color: inherit;
 }
 ul {
+  list-style-type: none;
   margin: 0;
-  list-style: none;
+  padding: 0;
 }
 .table {
   margin: 20px;
@@ -33,4 +65,12 @@ table {
 }
 .left {
   text-align: left;
+}
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
 }
