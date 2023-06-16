@@ -4,27 +4,62 @@
         <title>HTML & CSS Lessons</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" type="image/x-icon" href="./pictures/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <nav class="navbar">
-            <a href="./renata.html">Home</a>
-            <a href="./index.html">ME</a>
+            <a href="./index.html">Home</a>
+            <a href="./renata.html">Renata</a>
+            <a href="./me.html">ME</a>
             <a href="#">HTML & CSS Lessons</a>            
             <a href="https://vscode.dev/?connectTo=tampermonkey" target="_blank">Visual Studio Code</a>
-            <a href="https://www.w3schools.com/" target="_blank">W3schools</a>
-            <a href="https://liveuamap.com/" target="_blank">Liveuamap</a>
-            <a href="https://deepstatemap.live/#6/49.438/32.053" target="_blank">Deepstate</a>
-            <a href="https://map.ukrainealarm.com/" target="_blank">Ukraine Alarm</a>
+            <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+            <a href="https://discord.com/channels/974519864045756446/1046312630626820187" target="_blank">AI Discord</a>
+            <div class="dropdown">
+                <button class="dropbtn">WAR</button>
+                <div class="dropdown-content">
+                    <a href="https://liveuamap.com/" target="_blank">
+                        Liveuamap
+                    </a>
+                    <a href="https://deepstatemap.live/#6/49.438/32.053" target="_blank">
+                        Deepstate
+                    </a>
+                    <a href="https://map.ukrainealarm.com/" target="_blank">
+                        Ukraine Alarm
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Coding</button>
+                <div class="dropdown-content">
+                    <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp" target="_blank">
+                        Dropdown menu instruction
+                    </a>
+                    <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar" target="_blank">
+                        Dropdown Menu inside a Navigation Bar
+                    </a>
+                    <a href="https://www.w3schools.com/" target="_blank">
+                        W3schools
+                    </a>
+                </div>
+            </div>
         </nav>
         <div class="container">
+            <h2>An<a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank" style="color: #04AA6D!important;">HTML tag iframe</iframe></a>is used to display a web page within a web page.</h2>
+            <iframe id="frame" src="https://map.ukrainealarm.com/" title="Офіційна карта повітряних тривог України" scrolling="no" >
+            </iframe>
             <article>
-                <h2>HTML</h2>
+                <h2>Resources for Studiing programming</h2>
                 <section>
                     <ul>
                         <li>
-                            <a class="links" href="https://iphoneislam.com/uk/2020/08/best-iphone-ipad-programming-apps/86546" target="_blank">
+                            <p>
                                 Найкращі програми для навчання програмуванню для iPhone та iPad
-                            </a>
+                                <a class="links" href="https://iphoneislam.com/uk/2020/08/best-iphone-ipad-programming-apps/86546" target="_blank">
+                                    <b>Go to...</b>
+                                </a>
+                            </p>
+                            
                         </li>
                         <li>
                             <p>
@@ -48,8 +83,8 @@
                             </a>
                         </li>
                         <li>
-                            <a class="links" href="https://www.youtube.com/watch?v=faIknwAs3Ng&list=PLenwk9TUJzJ6ep0oogRRQZHzPMtTGKqF1&index=16" target="_blank">
-                                Основи HTML & CSS українською для початківців
+                            <a class="links" href="https://www.youtube.com/watch?v=t_0IHWxwp1E&list=PLenwk9TUJzJ6ep0oogRRQZHzPMtTGKqF1&index=19" target="_blank">
+                                Основи HTML & CSS українською для початківців. Урок 17
                             </a>
                         </li>
                     </ul>
@@ -90,35 +125,8 @@
                         <td>60</td>
                     </tr>
                 </table>
-            </div>
-            <h2>Hoverable Dropdown</h2>
-            <p>Move the mouse over the button to open the dropdown menu.</p>
-
-            <div class="dropdown">
-            <button class="dropbtn">Dropdown (example)</button>
-                <div class="dropdown-content">
-                    <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp" target="_blank">Dropdown menu instruction</a>
-                    <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar" target="_blank">Dropdown Menu inside a Navigation Bar</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            
-            <div class="parent">
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-            </div>
-            
-            <a href="">Hello</a>
-            <a href="">Hello</a>
-            <a href="">Hello</a>
-            <a href="">Hello</a>
-            <a href="">Hello</a>
-            <h2>An <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank" style="color: #04AA6D!important;">HTML iframe</a> is used to display a web page within a web page.</h2>
-            <iframe id="frame" src="https://map.ukrainealarm.com/" title="Офіційна карта повітряних тривог України" scrolling="no" >
-            </iframe>
+            </div>               
+            <br>
             <br>
             <iframe src="https://uaserials.pro/" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
             <p><a href="https://goverla.ua/" target="iframe_a">Click to see Goverla.ua</a></p>

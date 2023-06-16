@@ -3,7 +3,9 @@ body {
     font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
     text-align: center;    
 }
-
+p {
+  margin: 0px;
+}
 header {
     margin: 50px;
   }
@@ -39,8 +41,12 @@ img {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    align-items: center;
 }
 
+.logo-container {
+  margin: 0px;
+}
 .logo-link {
     display: flex;
     height: 100%;
@@ -85,7 +91,7 @@ img {
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
+    /*position: fixed;*/ /*Set the navbar to fixed position, but dropdown menu will not work*/
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
   }
@@ -94,24 +100,77 @@ img {
   .navbar a {
     float: left;
     display: block;
+    font-size: 16px;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
+ /* Start -------Style The Dropdown Button */
+
   /* Change background on mouse-over */
-  .navbar a:hover {
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .navbar a:hover, .dropdown:hover .dropbtn {
     background: #ddd;
     color: black;
   }
+
+ /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown Button */
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* End-------Style The Dropdown Button */
 
 /* Main content */
 
 .container {
     padding: 18px;
     margin-top: 35px; /* Add a top margin to avoid content overlay */
-    height: 2000px;
+    /* height: 2000px; */
   }
 
 /* usefull links & button settings */
@@ -162,56 +221,6 @@ img {
   .left {
     text-align: left;
   }
-
-
-  /* -------Style The Dropdown Button */
-  .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;  
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-  /* -------Style The Dropdown Button */
   
   /* how to make a live preview of a website */
   #frame {
