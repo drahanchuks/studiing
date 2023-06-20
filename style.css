@@ -1,3 +1,11 @@
+/* зміна дизайну при переході на мобільний перегляд */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/* ------------------------------------------------ */
+
 body {
     margin: 0;
     font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;

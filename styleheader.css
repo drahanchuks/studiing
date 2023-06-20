@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: "Raleway","Helvetica","Arial",sans-serif;
+    
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* наслідувати */
+
+}
+
+.header {
+    height: 50px;
+    line-height: 50px; /* висота лінії тексту дорівнює висоті блоку, якщо маєм відцентрувати текст */
+    background-color: black;    
+}
+
+.nav-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
