@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: "Raleway","Helvetica","Arial",sans-serif;
-    
 }
 
 ul {
@@ -17,21 +16,46 @@ a {
 
 .header {
     height: 50px;
-    line-height: 50px; /* висота лінії тексту дорівнює висоті блоку, якщо маєм відцентрувати текст */
-    background-color: black;    
+    /*line-height: 50px; /* висота лінії тексту дорівнює висоті блоку, якщо маєм відцентрувати текст */
+    background-color: black; 
+    align-items: center;  /*align content vertically or start, or end */
+    display: flex; /* only fo parent block */
+    justify-content: space-between; /* розташування елементів блоку по center, 
+    space-between або space-around, або start, або end напр.*/
+    /* flex-direction: column; */
+    /*flex-wrap: wrap;   only fo parent block */
+}
+
+.logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
 }
 
 .nav-list li {
-    display: inline-block;
+    padding: 0 10px;
+    /* display: inline-block; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* order: 1; */ 
     color: white;
     font-weight: bold;
     font-size: 14px;
 }
 
 .nav-list li:last-of-type a {
-    display: block;
+    display: flex;
     height: 30px;
-    line-height: 30px;
+    /* line-height: 30px; */
     padding: 0 10px;
     background-color: #dd3d53;
     align-items: center;
@@ -49,3 +73,10 @@ a {
    width: 1em;
 }
 
+.svg-inline--fa {
+    margin-right: 10px;
+    /* display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em; */
+}
