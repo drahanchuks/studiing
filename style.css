@@ -252,7 +252,10 @@ flex: 1;
     display: block;
   }
 
-
+footer {
+  position: sticky;
+  bottom: 0;
+}
   .footer button {
     padding: 16px;
   }
