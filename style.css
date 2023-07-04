@@ -213,23 +213,6 @@ flex: 1;
     color: blue;
 }
 
-/* youtube button settings */
-.youtube {
-    background-color: red; 
-    color: white; 
-    border-radius:5px; 
-}
-.youtube:hover {
-    background-color: #c9233a;
-}
-/* warinukraine button settings */
-.warinukraine {
-    color: red; 
-    border-radius:10px;
-}
-.warinukraine:hover {
-    background-color: rgb(176, 190, 190);
-}
 /* table settings */
 .table {
     margin: 20px;
@@ -261,6 +244,7 @@ flex: 1;
 footer {
   position: sticky;
   bottom: 0;
+  
 }
   .footer button {
     padding: 16px;
@@ -273,3 +257,25 @@ footer {
     .parent {
       width: 500px;
     }
+/* youtube button settings */
+.youtube {
+  background-color: red; 
+  color: white; 
+  border-radius:5px; 
+}
+.youtube:hover {
+  background-color: #c9233a;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* warinukraine button settings */
+.warinukraine {
+  color: red; 
+  border-radius:10px;
+}
+.warinukraine:hover {
+  background-color: rgb(176, 190, 190);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
