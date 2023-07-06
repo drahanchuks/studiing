@@ -23,6 +23,7 @@ a {
     space-between або space-around, або start, або end напр.*/
     /* flex-direction: column; */
     /*flex-wrap: wrap;   only fo parent block */
+    padding: 0 20px;
 }
 
 .logo-link {
@@ -53,6 +54,7 @@ a {
 
 .nav-list-link {
     position: relative;
+    transition: all .25s ease;
 }
 
 .nav-list-link::after {
@@ -62,9 +64,17 @@ a {
     bottom: -8px;
     height: 2px;
     left: 0;
-    /* transform: scaleX(0); */
+    transform: scaleX(0);
     transition: all .25s ease;
     width: 100%;
+}
+
+.nav-list-link:hover {
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-list li:last-of-type a {
@@ -111,6 +121,8 @@ a {
 
 .test-rotate {
     background-color: aquamarine;
+    transform-origin: bottom right; 
+       /* вказуєм точку трансформації блоку */
 }
 .test-rotate:hover {
     transform : rotate(360deg);
@@ -129,7 +141,8 @@ a {
     background-color: tomato;
 }
 .test-translate:hover {
-    transform: translate(100px, 0);
+    transform: translate(100px, 100px) scale(1.3); 
+    /* через пробіл додаткові трансформації */
 }
 .test-skew {
     background-color: violet;

@@ -209,6 +209,14 @@ flex: 1;
     color: rgb(8, 69, 150);
 }
 
+.link-image {
+  transition: all 1s ease;
+}
+
+.link-image:hover {
+  transform: scale(1.1);
+}
+
 .linksbutton {
     color: blue;
 }
