@@ -15,6 +15,10 @@ p {
   margin: 0px;
 }
 
+h3, h2 {
+  margin: 0;
+}
+
 p::first-letter {
   font-size: 200%;
   color: #8A2BE2;
@@ -204,9 +208,12 @@ flex: 1;
     color: blue;
     display: inline-block;
     margin: 5px;
+    transition: all 1s ease;
+    /* transform-origin: left bottom; */
 }
 .links:hover {
-    color: rgb(8, 69, 150);
+  transform: scale(1.1);  
+  color: rgb(8, 69, 150);
 }
 
 .link-image {
