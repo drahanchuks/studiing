@@ -17,6 +17,9 @@ a {
     height: 50px;
     /*line-height: 50px; /* висота лінії тексту дорівнює висоті блоку, якщо маєм відцентрувати текст */
     background-color: black; 
+}
+
+.nav {
     align-items: center;  /*align content vertically or start, or end */
     display: flex; /* only fo parent block */
     justify-content: space-between; /* розташування елементів блоку по center, 
@@ -100,6 +103,7 @@ a {
 
 .svg-inline--fa {
     margin-right: 10px;
+    
     /* display: inline-block;
     font-size: inherit;
     height: 1em;
