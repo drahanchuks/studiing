@@ -14,12 +14,28 @@ a {
 }
 
 .header {
-    height: 50px;
+    height: 100vh;
     /*line-height: 50px; /* висота лінії тексту дорівнює висоті блоку, якщо маєм відцентрувати текст */
-    background-color: black; 
+    /* background-color: black;  */
+    background-image: url(https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.header::after {
+    background: #0c3632;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    transition: all .25s ease;
+    width: 100%;
+}
 .nav {
+    position: relative;
+    z-index: 1;
     align-items: center;  /*align content vertically or start, or end */
     display: flex; /* only fo parent block */
     justify-content: space-between; /* розташування елементів блоку по center, 
