@@ -1,4 +1,4 @@
-body {
+body, h1 {
     margin: 0;
     font-family: "Raleway","Helvetica","Arial",sans-serif;
 }
@@ -20,8 +20,10 @@ a {
     background-image: url(https://opencages.com.ua/_nuxt/img/homepage.0151b74.jpg.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
 }
-
+/* додатковий фон поверх зображення бекграунду */
 .header::after {
     background: #0c3632;
     content: "";
@@ -126,6 +128,47 @@ a {
     vertical-align: -0.125em; */
 }
 
+.content {
+    position: relative;
+    z-index: 1;
+    margin: 200px;
+}
+
+.content h1 {
+    color: white;
+    font-size: 3.5em;
+}
+
+.cl-primary {
+    display: block;
+    color: #17baaa;
+    margin-top: 40px;
+}
+
+.link-box {
+    margin-top: 40px;
+}
+
+.link {
+    background-color: #17baaa;
+    color: #fff;
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 40px;
+    outline: none;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .25s ease;
+}
+
 /* 27 06 2023*/
 .test-transform {
     display: flex;
@@ -179,5 +222,41 @@ a {
     height: 2px;
     background-color: #dd3d53;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-list-link {
+        color: green;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-list-link {
+        color: red;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav-list-link {
+        color: blue;
+    }
+}
+
+
+.nav-toggle {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.burger-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-list-link {
+        color: yellow;
+    }
 }
 

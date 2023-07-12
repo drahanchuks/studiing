@@ -199,7 +199,7 @@ nav ul li ul li{position: absolute; top:20px; left:5px}
   .work-links div {
 flex: 1;
   }
-.conveniq, .git{
+.conveniq, .git, .site{
     border: solid 1px grey;
     border-radius: 10px;
     padding: 10px;
