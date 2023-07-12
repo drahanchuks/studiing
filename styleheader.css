@@ -224,26 +224,10 @@ a {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 900px) {
-    .nav-list-link {
-        color: green;
-    }
-}
-@media screen and (max-width: 600px) {
-    .nav-list-link {
-        color: red;
-    }
-}
-@media screen and (max-width: 500px) {
-    .nav-list-link {
-        color: blue;
-    }
-}
-
-
 .nav-toggle {
     color: #fff;
     font-size: 2rem;
+    display: none;
 }
 
 .burger-icon {
@@ -254,9 +238,12 @@ a {
     cursor: pointer;
 }
 
-@media screen and (min-width: 992px) {
-    .nav-list-link {
-        color: yellow;
+@media screen and (max-width: 992px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-toggle {
+       display: block; 
     }
 }
 
