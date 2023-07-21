@@ -131,7 +131,8 @@ a {
 .content {
     position: relative;
     z-index: 1;
-    margin: 200px;
+    margin: auto;
+    height: auto;
 }
 
 .content h1 {
