@@ -138,7 +138,8 @@ a {
 .header-content {
     position: relative;
     z-index: 1;
-    margin: auto 0;
+    margin: auto;
+    height: auto;
 }
 
 .header-content-title {
